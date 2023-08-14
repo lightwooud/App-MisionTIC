@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cityNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:focusable="false"
+            android:padding="10dp"
+            android:text="@string/city_lorem"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingTop="0dp"
+            android:src="@drawable/temporal2_500px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cityNameTv" />
+
+        <TextView
+            android:id="@+id/infoGeneralV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:text="@string/general_info"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+        <TextView
+            android:id="@+id/paragraph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lorem_ipsum_2"
+            app:layout_constraintTop_toBottomOf="@id/infoGeneralV"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/infoLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:text="@string/geolocation"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph1"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/paragraph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lorem_ipsum_3"
+            app:layout_constraintTop_toBottomOf="@id/infoLocation"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/infoTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:text="@string/temperature"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph2"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/paragraph3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lorem_ipsum_4"
+            app:layout_constraintTop_toBottomOf="@id/infoTemperature"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/infoSites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:text="Sitios recomendados"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph3"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/paragraph4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="10dp"
+            android:text="@string/lorem_ipsum_5"
+            app:layout_constraintTop_toBottomOf="@id/infoSites"
+            android:focusable="false"/>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:src="@drawable/map_button"
+            app:layout_constraintBottom_toTopOf="@+id/infoGeneralV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="@+id/infoGeneralV"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            android:filterTouchesWhenObscured="true"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

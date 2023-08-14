@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#d3ebf8"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/item_site"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardRecycler">
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/city_lorem"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageURL"
+            android:layout_width="208dp"
+            android:layout_height="208dp"
+            android:src="@drawable/temporal2_500px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cityName"
+            app:circularflow_radiusInDP="10dp"/>
+
+        <TextView
+            android:id="@+id/shortInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageURL"
+            app:layout_constraintTop_toBottomOf="@id/cityName"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:maxLines="10"
+            android:text="@string/lorem_ipsum" />
+
+        <TextView
+            android:id="@+id/punctuation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageURL"
+            app:layout_constraintTop_toBottomOf="@id/shortInfo"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:text="@string/puntuaction"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

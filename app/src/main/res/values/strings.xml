@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SitiosMisionTic</string>
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Notificaciones</string>
+    <string name="sync_header">Sonido</string>
+
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_settings">Configuración</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="city_lorem">Ciudad</string>
+    <string name="puntuaction">Puntuación: N.A.</string>
+    <string name="general_info">Información general</string>
+    <string name="lorem_ipsum_2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
+    <string name="geolocation">Ubicación geográfica</string>
+    <string name="lorem_ipsum_3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
+    <string name="lorem_ipsum_4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
+    <string name="lorem_ipsum_5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</string>
+    <string name="temperature">Temperatura y climatología</string>
+</resources>
